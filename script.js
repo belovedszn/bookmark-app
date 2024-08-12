@@ -1,3 +1,23 @@
+/*  (1)
+
+algorithms
+
+i.      create an array to store todos
+ii.     when we click "Add" ,
+iii.    get text from textbox
+iv.     Add it to Array
+v.      console.log() the array
+vi.     when we click add something from the input box, it should reset the textbox
+
+    (2)
+
+display the todo on our webpage
+     
+i.      Loop through the Array
+ii.     Create HTML code for each todo
+iii.    Put the HTML code on the webpage
+
+*/
 
 const bookmark = JSON.parse(localStorage.getItem('bookmark'));
 
