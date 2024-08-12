@@ -1,22 +1,6 @@
 
 
-let bookmark = JSON.parse(localStorage.getItem('bookmark'));
-
-if (!bookmark) { 
-    bookmark = [{
-            website: 'Google',
-            url: 'google.com',
-        },
-        {
-            website: 'Twitter',
-            url: 'twitter.com'
-        },
-        {
-            website: 'Gmail',
-            url: 'gmail.com'
-        }
-    ]
-}
+let bookmark = JSON.parse(localStorage.getItem('bookmark')) || [];
 
 displayResult();
 saveToStorage();
@@ -42,6 +26,8 @@ function addBookmark() {
     urlInputElement.value = '';
 
     displayResult();
+    saveToStorage();
+
 }; 
 
 function displayResult() {
